@@ -19,13 +19,8 @@
             </li>
         </ul>
         <router-link to="/" class="btn grey">Back</router-link>
+        <router-link v-bind:to="{name: 'edit-profile', params:{user_id: user_id}}" class="btn green">Edit</router-link>
         <button @click="deleteUser" class="btn red">Delete</button>
-
-        <div class="fixed-action-btn">
-            <router-link v-bind:to="{name: 'edit-profile', params:{user_id: user_id}}" class="btn-floating btn-large green">
-            <i class="fa fa-pencil"></i>
-            </router-link>
-        </div>
     </div>
 </template>
 

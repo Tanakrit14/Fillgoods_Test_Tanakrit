@@ -9,14 +9,12 @@
                 {{user_profile.first_name}} &nbsp; {{user_profile.last_name}}
 
                 <router-link class="secondary-content" v-bind:to="{name:'view-profile', params: {user_id: user_profile.user_id}}">
-                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-eye"></i> View
                 </router-link>
             </li>
         </ul>
-        <div class="fixed-action-btn">
-            <router-link to="/new-profile" class="btn-floating btn-large red">
-            <i class="fa fa-plus"></i>
-            </router-link>
+        <div class="right">
+            <router-link to="/new-profile" class="btn btn-small blue"> Add Profile </router-link>
         </div>
     </div>
 </template>
